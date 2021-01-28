@@ -1,6 +1,6 @@
 {
   "npmScope": "check-dem-mafs",
-  "affected": { "defaultBase": "master" },
+  "affected": { "defaultBase": "develop" },
   "implicitDependencies": {
     "workspace.json": "*",
     "package.json": { "dependencies": "*", "devDependencies": "*" },
