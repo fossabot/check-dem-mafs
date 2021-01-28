@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@check-dem-mafs/calculus": ["libs/calculus/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

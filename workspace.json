@@ -1,9 +1,32 @@
 {
-  
-  
   "version": 2,
-  
-  "projects": {},
+  "projects": {
+    "calculus": {
+      "root": "libs/calculus",
+      "sourceRoot": "libs/calculus/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/calculus/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/calculus"
+          ],
+          "options": {
+            "jestConfig": "libs/calculus/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  },
   "cli": {
     "defaultCollection": "@nrwl/workspace"
   }
