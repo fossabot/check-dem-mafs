@@ -1,5 +1,5 @@
 {
-  "npmScope": "check-dem-mafs",
+  "npmScope": "cdm",
   "affected": { "defaultBase": "develop" },
   "implicitDependencies": {
     "workspace.json": "*",
@@ -15,5 +15,5 @@
       "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
     }
   },
-  "projects": { "calculus": { "tags": [] } }
+  "projects": { "calculus": { "tags": [] }, "api": { "tags": [] } }
 }

@@ -81,7 +81,15 @@
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       {
-        "allowHigherOrderFunctions": true
+        "allowHigherOrderFunctions": true,
+        "allowExpressions": true,
+        "allowTypedFunctionExpressions": true
+      }
+    ],
+    "@typescript-eslint/explicit-member-accessibility": [
+      "error",
+      {
+        "accessibility": "explicit"
       }
     ]
   }

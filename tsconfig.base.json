@@ -5,17 +5,18 @@
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2019",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@check-dem-mafs/calculus": ["libs/calculus/src/index.ts"]
+      "@cdm/calculus": ["libs/calculus/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
