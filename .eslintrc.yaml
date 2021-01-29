@@ -1,0 +1,74 @@
+root: true
+
+ignorePatterns:
+  - "**/*.js"
+
+extends:
+  - "airbnb-typescript/base"
+  - "plugin:@typescript-eslint/eslint-recommended"
+  - "plugin:@typescript-eslint/recommended"
+  - "plugin:@nrwl/nx/typescript"
+
+plugins:
+  - "@typescript-eslint"
+  - "@nrwl/nx"
+  - "simple-import-sort"
+  - "import"
+  - "sort-keys-fix"
+  - "unused-imports"
+
+parser: "@typescript-eslint/parser"
+parserOptions:
+  ecmaVersion: 2019
+  sourceType: module
+  project: ./tsconfig.base.json
+
+settings:
+  import/resolver:
+    typescript:
+
+rules:
+  sort-imports: "off"
+  import/order: "off"
+  import/first: "off"
+  import/prefer-default-export: "off"
+  import/no-duplicates: "off"
+  simple-import-sort/imports: "error"
+  simple-import-sort/exports: "error"
+  unused-imports/no-unused-imports-ts: "error"
+  no-void: "off"
+
+  func-style:
+    - error
+    - expression
+    - allowArrowFunctions: true
+
+  sort-keys-fix/sort-keys-fix:
+    - error
+    - asc
+    - natural: true
+
+  "@nrwl/nx/enforce-module-boundaries":
+    - error
+    - enforceBuildableLibDependency: true
+      allow: []
+      depConstraints:
+        - sourceTag: "*"
+          onlyDependOnLibsWithTags:
+            - "*"
+
+  "@typescript-eslint/no-unused-vars":
+    - error
+    - vars: all
+      args: after-used
+      ignoreRestSiblings: true
+      argsIgnorePattern: "^_"
+      varsIgnorePattern: "^_"
+
+  "@typescript-eslint/consistent-type-imports":
+    - error
+    - prefer: type-imports
+
+  "@typescript-eslint/explicit-function-return-type":
+    - error
+    - allowHigherOrderFunctions: true

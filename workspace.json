@@ -8,6 +8,7 @@
       "targets": {
         "lint": {
           "executor": "@nrwl/linter:eslint",
+          "config": "apps/cli/.eslintrc.yaml",
           "options": {
             "lintFilePatterns": [
               "libs/calculus/**/*.ts"

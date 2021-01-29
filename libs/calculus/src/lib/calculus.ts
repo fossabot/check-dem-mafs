@@ -1,3 +1,1 @@
-export function calculus(): string {
-  return 'calculus';
-}
+export const calculus = (): string => 'calculus'
