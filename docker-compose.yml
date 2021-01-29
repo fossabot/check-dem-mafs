@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.dev
+    command: pnpm start api
+    user: 1000:1000
+    working_dir: /app
+    restart: on-failure
+    environment:
+      PORT: 8080
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app
