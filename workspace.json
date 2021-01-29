@@ -65,6 +65,27 @@
           }
         }
       }
+    },
+    "calculus-form": {
+      "root": "libs/calculus-form",
+      "sourceRoot": "libs/calculus-form/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/calculus-form/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/calculus-form"],
+          "options": {
+            "jestConfig": "libs/calculus-form/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

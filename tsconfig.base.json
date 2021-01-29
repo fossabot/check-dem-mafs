@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@cdm/calculus": ["libs/calculus/src/index.ts"]
+      "@cdm/calculus": ["libs/calculus/src/index.ts"],
+      "@cdm/calculus-form": ["libs/calculus-form/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

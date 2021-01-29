@@ -15,5 +15,9 @@
       "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
     }
   },
-  "projects": { "calculus": { "tags": [] }, "api": { "tags": [] } }
+  "projects": {
+    "calculus": { "tags": [] },
+    "api": { "tags": [] },
+    "calculus-form": { "tags": [] }
+  }
 }
