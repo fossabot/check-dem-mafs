@@ -8,18 +8,13 @@
       "targets": {
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "config": "apps/cli/.eslintrc.yaml",
           "options": {
-            "lintFilePatterns": [
-              "libs/calculus/**/*.ts"
-            ]
+            "lintFilePatterns": ["libs/calculus/**/*.ts"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/calculus"
-          ],
+          "outputs": ["coverage/libs/calculus"],
           "options": {
             "jestConfig": "libs/calculus/jest.config.js",
             "passWithNoTests": true

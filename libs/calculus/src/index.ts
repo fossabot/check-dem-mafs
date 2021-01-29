@@ -1,1 +1,2 @@
-export * from './lib/calculus';
+export * from './operations';
+export * from './types';
